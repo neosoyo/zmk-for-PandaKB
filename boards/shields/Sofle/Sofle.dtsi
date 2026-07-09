@@ -153,4 +153,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 	chosen {
 		zmk,underglow = &led_strip;
 	};
+    zephyr,user {
+        psw-up = <&gpio0 13 (GPIO_OUTPUT_ACTIVE | GPIO_PULL_UP)>;
+    };
 };
