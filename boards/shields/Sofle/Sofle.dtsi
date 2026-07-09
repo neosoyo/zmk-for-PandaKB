@@ -161,7 +161,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         
         /* Select the GPIO pin: port 0, pin 13 */
         /* GPIO_ACTIVE_HIGH means driving it 'high' enables it */
-        gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+        gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
         
         /* This tells Zephyr to automatically turn it on during boot */
         regulator-boot-on;
